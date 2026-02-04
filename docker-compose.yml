@@ -1,0 +1,13 @@
+services:
+  ros2:
+    build: .
+    container_name: ros2_humble_dev
+    tty: true
+    stdin_open: true
+    ports:
+      - "8765:8765"
+    volumes:
+      - .:/workspaces/flow-ros2:cached
+      - ./src:/home/ros/ros2_ws/src
+    working_dir: /workspaces/flow-ros2
+    command: bash -lc "source /opt/ros/humble/setup.bash && bash"
