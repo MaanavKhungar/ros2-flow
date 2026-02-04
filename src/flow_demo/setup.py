@@ -21,7 +21,7 @@ setup(
             'dummy_image_pub = flow_demo.dummy_image_pub:main',
             'frame_replay = flow_demo.frame_replay:main',
             'image_listener = flow_demo.image_listener:main',
-
+            'raft_flow_node = flow_demo.raft_flow_node:main',
         ],
     },
 )
