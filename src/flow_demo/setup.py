@@ -22,6 +22,7 @@ setup(
             'frame_replay = flow_demo.frame_replay:main',
             'image_listener = flow_demo.image_listener:main',
             'raft_flow_node = flow_demo.raft_flow_node:main',
+            'web_server = flow_demo.web_server:main',
         ],
     },
 )
